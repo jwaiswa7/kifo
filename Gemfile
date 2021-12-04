@@ -27,6 +27,7 @@ gem 'image_processing', '~> 1.2' # Use Active Storage variant
 
 gem 'rubocop-rails', require: false # enforce ruby style
 
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
