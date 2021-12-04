@@ -27,6 +27,7 @@ gem 'image_processing', '~> 1.2' # Use Active Storage variant
 
 gem 'rubocop-rails', require: false # enforce ruby style
 
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
@@ -43,6 +44,7 @@ group :development, :test do
   gem 'factory_bot_rails', '~> 5.2' # factory_bot is a fixtures replacement with a straightforward definition syntax, support for multiple build strategies
   gem 'faker' # A library for generating fake data such as names, addresses, and phone numbers
   gem 'rspec-rails', '~> 5.0.2'
+
 end
 
 group :development do
