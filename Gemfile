@@ -26,6 +26,8 @@ gem 'jbuilder', '~> 2.7' # Build JSON APIs with ease. Read more: https://github.
 gem 'image_processing', '~> 1.2' # Use Active Storage variant
 
 gem 'rubocop-rails', require: false # enforce ruby style
+gem 'simple_form'
+
 
 
 # Reduces boot times through caching; required in config/boot.rb

@@ -3,7 +3,7 @@ class CreateTeams < ActiveRecord::Migration[6.1]
     create_table :teams do |t|
       t.string :name
       t.string :sku
-      t.string :role
+      t.text :description
 
       t.timestamps
     end

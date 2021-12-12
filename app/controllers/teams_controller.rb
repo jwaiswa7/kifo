@@ -8,9 +8,18 @@ class TeamsController < ApplicationController
 
 
     def new
+      @team = Team.new
     end
 
     def create
+      @team = Team.new(team_params)
+      if @team.save 
+        # create team member
+        TeamMember.create(user: current_user, team: @team)
+        redirect_to teams_path, notice: "Congs, ou have created a #{@team.name} team"
+      else
+        render :new
+      end
     end
 
     def update
@@ -19,5 +28,6 @@ class TeamsController < ApplicationController
     private 
 
     def team_params
+        params.require(:team).permit(:name, :description)
     end
 end

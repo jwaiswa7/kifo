@@ -1,0 +1,10 @@
+<div class="card">
+  <div class="card-header">Create New team</div>
+  <div class="card-body">
+    <%= simple_form_for @team do |f| %>
+      <%= f.input :name, required: true %>
+      <%= f.input :description, as: :text %>
+      <%= f.button :submit,  class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
