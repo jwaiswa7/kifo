@@ -35,6 +35,9 @@ gem 'ordinare' # order gems
 
 gem 'devise'
 
+gem "pundit"
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'bullet' # help to kill N+1 queries and unused eager loading
